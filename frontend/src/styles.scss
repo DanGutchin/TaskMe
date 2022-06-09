@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+// Import Fonts (Lato and Nunito)
+@import 'main-style';
+@import '../node_modules/bulma/bulma.sass';
+$light-Pur: #caa3eb;
+$purpGrad: #500967;
+$lighter-Purp: #cd68ef; 
+$darker-purp: rgb(62, 5, 85);
+
+$light: #f8f8f8;
+
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$primary: $purpGrad;
+
+$link: $light-Pur;
+
+
+// Update some of Bulma's component variables
+
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+// Set custom global styles (will be applied to whole app)
+
+html {
+    background: linear-gradient(to right top, $light-Pur, $purpGrad);
+}
+
+html, body {
+    height: 100%;
+}
